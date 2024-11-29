@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "sunbatheproductions28.guardribbits.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "refmap": "guardribbits.refmap.json",
+    "mixins": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "minVersion": "0.8"
+}

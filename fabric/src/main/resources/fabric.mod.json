@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_full_name}",
+    "description": "${mod_description}",
+    "authors": [
+        "Joosh",
+        "YUNGNICKYOUNG",
+        "HellionGames",
+        "Refresh Studios"
+    ],
+    "license": "LGPLv3",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "sunbatheproductions28.guardribbits.GuardRibbitsFabric"
+        ],
+        "client": [
+            "sunbatheproductions28.guardribbits.client.GuardRibbitsFabricClient"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "fabric": ">=${fabric_version}",
+        "minecraft": ">=${mc_version}",
+        "cloth-config2": ">=${clothconfig_version_fabric}",
+        "java": ">=17",
+        "yungsapi": ">=${yungsapi_mc_version}-Fabric-${yungsapi_version}",
+        "geckolib": ">=${fabric_geckolib_version}"
+    }
+}

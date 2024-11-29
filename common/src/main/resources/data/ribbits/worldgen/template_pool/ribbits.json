@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "ribbits:ribbits/guard_ribbit",
+        "processors": "ribbits:main",
+        "projection": "rigid",
+        "element_type": "yungsapi:yung_single_element"
+      }
+    }
+  ]
+}
