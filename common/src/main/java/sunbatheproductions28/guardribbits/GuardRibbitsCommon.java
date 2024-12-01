@@ -19,8 +19,10 @@ public class GuardRibbitsCommon {
 
     public static final ConfigModule CONFIG = new ConfigModule();
 
-    // TODO - change this whenever updating to a new Minecraft version
     public static final String MC_VERSION_STRING = "1_20_1";
+
+    public static boolean DEBUG_LOG = false;
+    public static boolean DEBUG_RENDERING = false;
 
     @AutoRegister("general")
     public static AutoRegisterCreativeTab TAB = AutoRegisterCreativeTab.builder()
@@ -32,6 +34,9 @@ public class GuardRibbitsCommon {
             .build();
 
     public static void init() {
+        DEBUG_LOG = DEBUG_LOG && Services.PLATFORM.isDevelopmentEnvironment();
+        DEBUG_RENDERING = DEBUG_RENDERING && Services.PLATFORM.isDevelopmentEnvironment();
+
         YungAutoRegister.scanPackageForAnnotations("sunbatheproductions28.guardribbits");
         Services.MODULES.loadCommonModules();
         LOGGER.info("Initializing the Ribbit Guardians!");

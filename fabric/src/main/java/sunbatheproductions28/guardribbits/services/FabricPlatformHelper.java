@@ -8,6 +8,7 @@ import sunbatheproductions28.guardribbits.module.EntityTypeModule;
 import java.util.function.Supplier;
 
 public class FabricPlatformHelper implements IPlatformHelper {
+
     @Override
     public String getPlatformName() {
         return "Fabric";
@@ -15,17 +16,19 @@ public class FabricPlatformHelper implements IPlatformHelper {
 
     @Override
     public boolean isModLoaded(String modId) {
+
         return FabricLoader.getInstance().isModLoaded(modId);
     }
 
     @Override
     public boolean isDevelopmentEnvironment() {
+
         return FabricLoader.getInstance().isDevelopmentEnvironment();
     }
 
     @Override
     public Supplier<Item> getRibbitGuardSpawnEggItem() {
-        return () -> new SpawnEggItem(EntityTypeModule.GUARD_RIBBIT.get(), 0xb3c35b, 0x769b4f,
+        return () -> new SpawnEggItem(EntityTypeModule.GUARD_RIBBIT.get(), 0xb3c35b, 0xCFAC55,
                 new Item.Properties());
     }
 

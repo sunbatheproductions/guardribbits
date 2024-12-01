@@ -29,7 +29,7 @@ public class ForgePlatformHelper implements IPlatformHelper {
 
     @Override
     public Supplier<Item> getRibbitGuardSpawnEggItem() {
-        return () -> new ForgeSpawnEggItem(() -> EntityTypeModule.GUARD_RIBBIT.get(), 0xBA852F, 0xCFAC55,
+        return () -> new ForgeSpawnEggItem(() -> EntityTypeModule.GUARD_RIBBIT.get(), 0xb3c35b, 0xCFAC55,
                 new Item.Properties());
     }
 
